@@ -1,0 +1,77 @@
+/* pages/order/order.wxss */
+
+page {
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin: 16rpx 0;
+  background-color: #fff;
+  padding: 32rpx;
+  display: flex;
+}
+.content view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 32rpx;
+}
+
+.section {
+  display: flex;
+  flex-grow: 1
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+label {
+  display: flex;
+  background-color: #fff;
+  padding: 16rpx;
+  align-items: center;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  /*border:1px solid rgba(0, 0, 0, 0.2);*/
+  font-size: 28rpx;
+  padding: 16rpx;
+}
+
+.submit {
+  position: absolute;
+  right: 0rpx;
+  width: 100%;
+  bottom: 0rpx;
+  display: flex;
+  background-color: #fff;
+  justify-content: flex-end;
+  align-items: center;
+}
+.submit text {
+  margin-right: 16rpx;
+}
+
+button {
+  margin: 0;
+  background-color: #ff8a00;
+  color: #fff;
+  border-radius: 0px;
+  width: 300rpx;
+}

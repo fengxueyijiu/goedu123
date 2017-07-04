@@ -1,0 +1,36 @@
+.home {
+  padding: 100px 15px;
+  height: 100vh;
+}
+.home .home-content {
+  background-color: #fff;
+  padding: 50px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+.home .title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.home .enter {
+  width: 200px;
+  background-color: #0098f7;
+  display: block;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 16px;
+}
+
+.home .login-form {
+  max-width: 300px;
+}
+
+.home .login-form-button {
+  width: 100%;
+}

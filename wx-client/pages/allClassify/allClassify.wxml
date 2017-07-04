@@ -1,0 +1,115 @@
+<!--pages/allClassify/allClassify.wxml-->
+<view class="wrap">
+  <header>
+    <text class="{{current==0 ? 'line':''}}" bindtap="musicIndex">音乐</text>
+    <text class="{{current==1 ? 'line':''}}" bindtap="danceIndex">舞蹈</text>
+    <text class="{{current==2 ? 'line':''}}" bindtap="paintingIndex">美术</text>
+  </header>
+  <swiper class="container" current="{{current}}" bindchange="change">
+    <swiper-item class="item">
+      <view class="nav">
+        <view class="{{musicClassify=='钢琴' ? 'bgc':''}}" data-name="钢琴" bindtap="musicClick">
+          <text class="{{musicClassify=='钢琴' ? 'border':''}}">钢琴</text>
+        </view>
+        <view class="{{musicClassify=='舞蹈' ? 'bgc':''}}" data-name="舞蹈" bindtap="musicClick" >
+          <text class="{{musicClassify=='舞蹈' ? 'border':''}}">舞蹈</text>
+        </view>
+        <view class="{{musicClassify=='绘画' ? 'bgc':''}}" data-name="绘画" bindtap="musicClick">
+          <text class="{{musicClassify=='绘画' ? 'border':''}}">绘画</text>
+        </view>
+        <view class="{{musicClassify=='吉他' ? 'bgc':''}}" data-name="吉他" bindtap="musicClick">
+          <text class="{{musicClassify=='吉他' ? 'border':''}}">吉他</text>
+        </view>
+        <view class="{{musicClassify=='架子鼓' ? 'bgc':''}}" data-name="架子鼓" bindtap="musicClick">
+          <text class="{{musicClassify=='架子鼓' ? 'border':''}}">架子鼓</text>
+        </view>
+        <view class="{{musicClassify=='贝斯' ? 'bgc':''}}" data-name="贝斯" bindtap="musicClick">
+          <text class="{{musicClassify=='贝斯' ? 'border':''}}">贝斯</text>
+        </view>
+      </view>
+      <view  class="schools">
+        <text class="classify">{{musicClassify}}</text>
+        <view class="schools-inner">
+          <navigator wx:for="{{courses}}" wx:key="id" url="../school/school?link={{item.title}}" class="school">
+            <image src="{{item.cover}}" mode="aspectFill"  style="width: 200rpx;height:200rpx;border-radius:10rpx"/>
+            <view>
+              <text class="title">{{item.title}}</text>
+              <text style="font-size:24rpx;color:#888888;"> 9.9分｜ 普通学校</text>
+              <text class="address">同心路浙江商城A3018室同心路浙江商城A3018室同心路浙江商城A3018室</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="item">
+      <view class="nav">
+        <view class="{{danceClassify=='舞蹈' ? 'bgc':''}}" data-name="舞蹈" bindtap="danceClick">
+          <text class="{{danceClassify=='舞蹈' ? 'border':''}}">舞蹈</text>
+        </view>
+        <view class="{{danceClassify=='民族民间舞' ? 'bgc':''}}" data-name="民族民间舞" bindtap="danceClick" >
+          <text class="{{danceClassify=='民族民间舞' ? 'border':''}}">民族民间舞</text>
+        </view>
+        <view class="{{danceClassify=='拉丁舞' ? 'bgc':''}}" data-name="拉丁舞" bindtap="danceClick">
+          <text class="{{danceClassify=='拉丁舞' ? 'border':''}}">拉丁舞</text>
+        </view>
+        <view class="{{danceClassify=='街舞' ? 'bgc':''}}" data-name="街舞" bindtap="danceClick">
+          <text class="{{danceClassify=='街舞' ? 'border':''}}">街舞</text>
+        </view>
+        <view class="{{danceClassify=='爵士舞' ? 'bgc':''}}" data-name="爵士舞" bindtap="danceClick">
+          <text class="{{danceClassify=='爵士舞' ? 'border':''}}">爵士舞</text>
+        </view>
+        <view class="{{danceClassify=='芭蕾舞' ? 'bgc':''}}" data-name="芭蕾舞" bindtap="danceClick">
+          <text class="{{danceClassify=='芭蕾舞' ? 'border':''}}">芭蕾舞</text>
+        </view>
+      </view>
+      <view  class="schools">
+        <text class="classify">{{danceClassify}}</text>
+        <view class="schools-inner">
+          <navigator wx:for="{{courses}}" wx:key="id" url="../school/school?link={{item.title}}" class="school">
+            <image src="{{item.cover}}" mode="aspectFill"  style="width: 200rpx;height:200rpx;border-radius:10rpx"/>
+            <view>
+              <text class="title">{{item.title}}</text>
+              <text style="font-size:24rpx;color:#888888;"> 9.9分｜ 普通学校</text>
+              <text style="color: #888888; font-size: 24rpx">同心路浙江商城A3018室</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="item">
+      <view class="nav">
+        <view class="{{paintingClassify=='美术' ? 'bgc':''}}" data-name="美术" bindtap="paintingClick">
+          <text class="{{paintingClassify=='美术' ? 'border':''}}">美术</text>
+        </view>
+        <view class="{{paintingClassify=='硬笔书法' ? 'bgc':''}}" data-name="硬笔书法" bindtap="paintingClick" >
+          <text class="{{paintingClassify=='硬笔书法' ? 'border':''}}">硬笔书法</text>
+        </view>
+        <view class="{{paintingClassify=='软笔书法' ? 'bgc':''}}" data-name="软笔书法" bindtap="paintingClick">
+          <text class="{{paintingClassify=='软笔书法' ? 'border':''}}">软笔书法</text>
+        </view>
+        <view class="{{paintingClassify=='速写' ? 'bgc':''}}" data-name="速写" bindtap="paintingClick">
+          <text class="{{paintingClassify=='速写' ? 'border':''}}">速写</text>
+        </view>
+        <view class="{{paintingClassify=='水粉' ? 'bgc':''}}" data-name="水粉" bindtap="paintingClick">
+          <text class="{{paintingClassify=='水粉' ? 'border':''}}">水粉</text>
+        </view>
+        <view class="{{paintingClassify=='素描' ? 'bgc':''}}" data-name="素描" bindtap="paintingClick">
+          <text class="{{paintingClassify=='素描' ? 'border':''}}">素描</text>
+        </view>
+      </view>
+      <view  class="schools">
+        <text class="classify">{{paintingClassify}}</text>
+        <view class="schools-inner">
+          <navigator wx:for="{{courses}}" wx:key="id" url="../school/school?link={{item.title}}" class="school">
+            <image src="{{item.cover}}" mode="aspectFill"  style="width: 200rpx;height:200rpx;border-radius:10rpx"/>
+            <view>
+              <text class="title">{{item.title}}</text>
+              <text style="font-size:24rpx;color:#888888;"> 9.9分｜ 普通学校</text>
+              <text class="address">同心路浙江商城A3018室</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

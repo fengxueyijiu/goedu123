@@ -1,0 +1,49 @@
+.cat-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cat-page .white-block {
+  margin-bottom: 30px;
+}
+
+.cat-page .title {
+  background-color: #f2f2f2;
+  padding: 8px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cat-page .group {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cat-page .cat-list{
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.cat-page .cat{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.cat-page .cat .actions{
+  padding-left: 15px;
+  display: flex;
+}
+
+.cat-page .cat .actions > div{
+  padding-left: 20px;
+  cursor: pointer;
+}

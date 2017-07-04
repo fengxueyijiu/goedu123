@@ -1,0 +1,61 @@
+<!--pages/collection/collection.wxml-->
+<view class="container">
+  <header>
+    <text class="{{current==0 ? 'line':''}}" bindtap="schoolsIndex">学校</text>
+    <text class="{{current==1 ? 'line':''}}" bindtap="coursesIndex">课程</text>
+    <text class="{{current==2 ? 'line':''}}" bindtap="shopIndex">店铺</text>
+    <text class="{{current==3 ? 'line':''}}" bindtap="commodityIndex">商品</text>
+  </header>
+  <swiper class="content" current="{{current}}" bindchange="change">
+    <swiper-item class="item">
+      <view class="courses">
+        <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+          <navigator url="../school/school?link={{item.title}}" class="course">
+            <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+            <text class="title">{{item.title}}</text>
+          </navigator>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="item">
+    <view class="courses">
+      <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+        <navigator url="../school/school?link={{item.title}}" class="course">
+          <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+          <text class="title">{{item.title}}</text>
+        </navigator>
+      </view>
+    </view>
+    </swiper-item>
+    <swiper-item class="item">
+      <view class="courses">
+        <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+          <navigator url="../school/school?link={{item.title}}" class="course">
+            <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+            <text class="title">{{item.title}}</text>
+          </navigator>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="item">
+      <view class="courses">
+        <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+          <navigator url="../school/school?link={{item.title}}" class="course">
+            <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+            <text class="title">{{item.title}}</text>
+          </navigator>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="item">
+      <view class="courses">
+        <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+          <navigator url="../school/school?link={{item.title}}" class="course">
+            <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+            <text class="title">{{item.title}}</text>
+          </navigator>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

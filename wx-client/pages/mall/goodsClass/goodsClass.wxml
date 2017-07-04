@@ -1,0 +1,42 @@
+<!--pages/commodity/goodsClass/goodsClass.wxml-->
+<view class="container">
+  <view class="nav">
+    <view class="{{musicClassify=='钢琴' ? 'bgc':''}}" data-name="钢琴" bindtap="musicClick">
+      <text class="{{musicClassify=='钢琴' ? 'border':''}}">钢琴</text>
+    </view>
+    <view class="{{musicClassify=='舞蹈' ? 'bgc':''}}" data-name="舞蹈" bindtap="musicClick" >
+      <text class="{{musicClassify=='舞蹈' ? 'border':''}}">舞蹈</text>
+    </view>
+    <view class="{{musicClassify=='绘画' ? 'bgc':''}}" data-name="绘画" bindtap="musicClick">
+      <text class="{{musicClassify=='绘画' ? 'border':''}}">绘画</text>
+    </view>
+    <view class="{{musicClassify=='吉他' ? 'bgc':''}}" data-name="吉他" bindtap="musicClick">
+      <text class="{{musicClassify=='吉他' ? 'border':''}}">吉他</text>
+    </view>
+    <view class="{{musicClassify=='架子鼓' ? 'bgc':''}}" data-name="架子鼓" bindtap="musicClick">
+      <text class="{{musicClassify=='架子鼓' ? 'border':''}}">架子鼓</text>
+    </view>
+    <view class="{{musicClassify=='贝斯' ? 'bgc':''}}" data-name="贝斯" bindtap="musicClick">
+      <text class="{{musicClassify=='贝斯' ? 'border':''}}">贝斯</text>
+    </view>
+  </view>
+  <view class="content">
+    <text class="classify">{{musicClassify}}</text>
+    <view class="content-inner">
+      <navigator wx:for="{{courses}}" wx:key="id" url="../school/school?link={{item.title}}" class="school">
+        <image src="{{item.cover}}" mode="aspectFill"  style="width: 200rpx;height:200rpx;border-radius:10rpx"/>
+        <view class="content-inner-right">
+          <text class="title">{{item.title}}</text>
+          <view>
+            <text style="font-size:24rpx;color:#e64340;">¥48.00</text>
+            <text style="font-size:24rpx;color:#888888;text-decoration:line-through;">¥48.00</text>
+          </view>
+          <view>
+            <text class="address">销量：88</text>
+            <text class="address">好评率：100%</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,112 @@
+/* pages/allClassify/allClassify.wxss */
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #f7f7f7;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff
+}
+
+header text {
+  display: block;
+  padding: 16rpx 48rpx;
+  font-size: 32rpx;
+}
+.line {
+  border-bottom: 3px solid #ff8a00;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  flex-grow: 1;
+  border-top: 2rpx solid #f1f1f1;
+}
+.item {
+  display: flex;
+  flex-grow: 1;
+}
+.item .nav {
+  width: 176rpx;
+  flex-shrink: 0;
+}
+.item .nav view {
+  padding: 32rpx 0;
+  border-bottom: 4rpx solid #fff;
+}
+.item .nav .bgc{
+  background-color: #fff;
+  border: none;
+}
+.border {
+  border-left: 3px solid #ff8a00;
+}
+.item .nav text {
+  display: block;
+  padding: 8rpx 16rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
+.item .schools {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.item .schools-inner {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 0 16rpx;
+  background-color: #fff;
+}
+
+.school {
+  display: flex;
+  padding: 16rpx 0rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.school image{
+  margin-right: 16rpx;
+  flex-shrink: 0;
+}
+.school view {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.school text{
+  display: block;
+  font-size: 28rpx;
+  color: #000
+}
+.schools .classify{
+  padding: 16rpx;
+  font-size: 28rpx;
+  color: #888888;
+}
+.school .title {
+  display: block;
+  width: 332rpx;
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;
+}
+.school .address {
+  color: #888888;
+  font-size: 24rpx;
+  display: block;
+  width: 332rpx;
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;
+}

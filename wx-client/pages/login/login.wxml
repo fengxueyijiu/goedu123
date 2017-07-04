@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<text>pages/login/login.wxml</text>
+<view>
+  <navigator url="../mine/mine" open-type="switchTab">
+    billie
+  </navigator>
+</view>

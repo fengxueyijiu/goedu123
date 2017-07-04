@@ -1,0 +1,43 @@
+/* pages/cat-schools/cat-schools.wxss */
+.search {
+  position:relative;
+}
+.search input {
+  width:450rpx;
+  border: 1px solid #ddd;
+  padding: 0 8px;
+  background-color: #fff;
+  border-radius: 14px;
+  margin: 0 auto;
+  margin-top: 32rpx;
+  margin-bottom: 32rpx;
+}
+.search image {
+  position: absolute;
+  width: 56rpx;
+  height: 56rpx;
+  z-index: 2000;
+  top:-2rpx;
+  left:540rpx;
+}
+
+.school {
+  display: flex;
+  padding: 16rpx 32rpx;
+  border-top: 2rpx solid #ddd;
+
+}
+.school image{
+  margin-right: 16rpx;
+}
+.school .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.school text{
+  display: block;
+  font-size: 32rpx;
+  color: #000
+}

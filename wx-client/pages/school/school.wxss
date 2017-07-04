@@ -1,0 +1,127 @@
+image {
+  display: block;
+}
+.container{
+  
+}
+.school {
+  position: relative;
+  padding: 32rpx;
+  border-top: 16rpx solid #f1f1f1;
+}
+.school text {
+  display: block;
+  padding: 16rpx 0;
+}
+.school .phone {
+  position: absolute;
+  width: 48rpx;
+  height: 48rpx;
+  top: 100rpx;
+  right: 64rpx;
+}
+.school .icon {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  bottom: 44rpx;
+  left: 24rpx
+}
+
+.erweima {
+  display: flex;
+  justify-content: space-between;
+  border-top: 16rpx solid #f1f1f1;
+  padding: 32rpx;
+  align-items: center;
+  font-size: 16px;
+}
+.erweima image{
+  width: 56rpx;
+  height: 56rpx;
+}
+.backrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left:0px;
+  z-index: 9998;
+  background: rgba(30, 30, 30, 0.6);
+}
+.show {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.courses {
+  border-top: 16rpx solid #f1f1f1;
+}
+.courses .label{
+  display: block;
+  padding: 16rpx 32rpx;
+}
+.course {
+  display: flex;
+  padding: 16rpx 32rpx;
+  border-top: 2rpx solid #ddd;
+
+}
+.course image{
+  margin-right: 16rpx;
+}
+.course .box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.course text{
+  display: block;
+  font-size: 32rpx;
+  color: #000
+}
+.describe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.describe text{
+  margin-right: 96rpx;
+  padding: 0;
+}
+
+.morecourse{
+  padding: 16rpx;
+  border-top: 2rpx solid #ddd;
+}
+.morecourse text{
+  font-size: 32rpx;
+  display: block;
+  text-align: center;
+}
+.morecourse image {
+  width: 32rpx;
+  height: 32rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.introduce {
+  border-top: 16rpx solid #f1f1f1;
+}
+.introduce text {
+  display: block;
+  font-size:24rpx;
+  padding: 16rpx 32rpx;
+  color: #888888;
+  line-height:36rpx;
+}
+.introduce .text {
+  padding-top: 0;
+}

@@ -1,0 +1,9 @@
+<!--pages/complain/complain.wxml-->
+<view class="container">
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="请输入您意见或建议...(200字以内)" name="textarea"/>
+      <button form-type="submit"> 提交 </button>
+    </form>
+  </view>
+</view>

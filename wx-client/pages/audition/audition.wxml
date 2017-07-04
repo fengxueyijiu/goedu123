@@ -1,0 +1,17 @@
+<!--pages/audition/audition.wxml-->
+<view class="container">
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <viem class="label">
+        <text>姓名：</text>
+        <input name="name" type="text" />
+      </viem>
+      <viem class="label">
+        <text>手机号码：</text>
+        <input name="number" type="number" />
+      </viem>
+      <textarea placeholder="请输入您留言...(200字以内)" name="textarea"/>
+      <button form-type="submit" > 预约 </button>
+    </form>
+  </view>
+</view>

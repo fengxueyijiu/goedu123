@@ -1,0 +1,81 @@
+<!--pages/commodity/home/home.wxml-->
+
+<view class="container">
+  <swiper indicator-dots="{{true}}"
+  autoplay="{{true}}" interval="5000" duration="1000" style="height: 422rpx">
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/redux-tower.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/gulp-flex-res.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/gitbeijing.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/gitbeijing.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+  </swiper>
+  <view class="nav">
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/009-acoustic-guitar.svg"  />
+      <text>乐器选购</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/001-party.svg"  />
+      <text>舞蹈道具</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/007-writing.svg"  />
+      <text>文化用品</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/006-book.svg"  />
+      <text>配套教材</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/008-ballet.svg"  />
+      <text>功服舞鞋</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/002-abacus.svg"  />
+      <text>儿童专区</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/005-construction.svg"  />
+      <text>居家生活</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/004-clothes.svg"  />
+      <text>衣帽穿戴</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/003-woman.svg"  />
+      <text>美妆洗护</text>
+    </navigator>
+    <navigator url="../goodsClass/goodsClass">
+     <image src="../../../images/goods/app.svg"  />
+      <text>综合分类</text>
+    </navigator>
+  </view>
+  <view class="content">
+    <view class="label">
+      <text>热门商品</text>
+      <navigator url="../allschools/allschools">更多 ></navigator>
+    </view>
+    <view class="courses">
+      <view style="width: 50%; padding: 0 8rpx;">
+        <navigator url="../school/school?link={{item.title}}" class="course">
+        <image src="http://o86bpj665.bkt.clouddn.com/posters/gitbeijing.png" mode="widthFix" style="width: 100%"/>
+        <text class="title">团购</text>
+        </navigator>
+      </view>
+      <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+        <navigator url="../school/school?link={{item.title}}" class="course">
+        <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+        <text class="title">{{item.title}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

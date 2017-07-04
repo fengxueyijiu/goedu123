@@ -1,0 +1,56 @@
+<view class="container">
+  <view class="header">
+    <image src="{{userInfo.avatarUrl}}" class="avatar" />
+    <view class="name">{{userInfo.nickName}}</view>
+  </view>
+  <view class="orders">
+    <view class="order">
+      <image src="../../images/commodity.svg" />
+      <text>商品订单</text>
+    </view>
+    <view class="order">
+      <image src="../../images/course.svg" />
+      <text>课程订单</text>
+    </view>
+  </view>
+  <view class="list">
+    <ul>
+      <li>
+        <navigator url="../collection/collection">
+          <image src="../../images/collection.svg" />
+          我的收藏
+        </navigator>
+      </li>
+      <li>
+        <navigator>
+          <image src="../../images/discount.svg" />
+          优惠券
+        </navigator>
+      </li>
+      <li>
+        <navigator>
+          <image src="../../images/customerService.svg" />
+          客户服务
+        </navigator>
+      </li>
+      <li>
+        <navigator url="../complain/complain">
+          <image src="../../images/pointers.svg" />
+          投诉建议
+        </navigator>
+      </li>
+      <li>
+        <navigator>
+          <image src="../../images/campaign.svg" />
+          我的活动
+        </navigator>
+      </li>
+      <li>
+        <navigator>
+          <image src="../../images/partner.svg" />
+          商务合作
+        </navigator>
+      </li>
+    </ul>
+  </view>
+</view>

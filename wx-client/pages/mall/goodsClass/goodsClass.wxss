@@ -1,0 +1,93 @@
+/* pages/commodity/goodsClass/goodsClass.wxss */
+page {
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+}
+
+.nav {
+  width: 176rpx;
+  height: 100vh;
+  overflow-y: scroll;
+  flex-shrink: 0;
+}
+.nav view {
+  padding: 32rpx 0;
+  border-bottom: 4rpx solid #fff;
+  border-right: 4rpx solid #fff;
+}
+.nav .bgc{
+  background-color: #fff;
+  border: none;
+}
+.border {
+  border-left: 3px solid #ff8a00;
+}
+.nav text {
+  display: block;
+  padding: 8rpx 16rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+  flex-direction: column;
+}
+.content-inner {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 0 16rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.school {
+  display: flex;
+  padding: 16rpx 0rpx;
+  border-bottom: 2rpx solid #ddd;
+  box-sizing: border-box;
+}
+.school image{
+
+  flex-shrink: 0;
+}
+.school .content-inner-right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 16rpx;
+  box-sizing: border-box;
+}
+.school .content-inner-right view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school text{
+  display: block;
+  font-size: 28rpx;
+  color: #000
+}
+.content .classify{
+  padding: 16rpx;
+  font-size: 28rpx;
+  color: #888888;
+}
+.school .title {
+  display: block;
+  width: 325rpx;
+  overflow: hidden; /*自动隐藏文字*/
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  white-space: nowrap;
+}
+.school .address {
+  color: #888888;
+  font-size: 24rpx;
+  display: block;
+}

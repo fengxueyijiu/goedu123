@@ -1,0 +1,45 @@
+<image src="http://o86bpj665.bkt.clouddn.com/posters/redux-tower.png" mode="widthFix" style="width: 750rpx"/>
+<view class="container">
+<view class="school">
+  <text style="font-size:16px">徐州市星海舞蹈艺术中心</text>
+  <text style="font-size:14px;color:#888888;"> 9.9分｜ 普通学校</text>
+  <text style="font-size:14px;color:#888888;padding-left:40rpx">徐州中山北路延长段牌楼办事处28栋</text>
+  <image class="phone" src="../../images/dianhua.svg" />
+  <image class="icon" src="../../images/icon.svg" />
+</view>
+<view class="erweima" bindtap="click">
+  <text>点击生成二维码</text>
+  <image class="icon" src="../../images/erweima.svg" />
+  <view class="backrop" wx:if="{{show}}"></view>
+  <view class="show" wx:if="{{show}}">
+    二维码
+  </view>
+</view>
+<view class="courses">
+  <text class="label">课程（14）</text>
+  <view wx:for="{{courses}}" wx:key="id">
+    <navigator url="../course/course?link={{item.title}}" class="course">
+      <image src="{{item.cover}}" mode="aspectFill"  style="width: 200rpx;height:200rpx;border-radius:10rpx"/>
+      <view class="box">
+        <text class="title">{{item.title}}</text>
+        <view class="describe">
+          <text style="color: #888888; font-size: 24rpx">课时：96</text>
+          <text style="color: #888888; font-size: 24rpx">已售：196</text>
+        </view>
+        <view class="describe">
+          <text style="font-size: 32rpx;color: #e64340">¥2800</text>
+          <text style="color: #888888; font-size: 24rpx">市场价：¥4196</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="morecourse">
+    <text>查看更多课程</text>
+    <image src="../../images/jiantou.svg" />
+  </view>
+  <view class="introduce">
+    <text style="font-size:16px;">品牌介绍</text>
+    <text class="text" style="">星海舞蹈艺术学校星海舞蹈艺术学校星海舞蹈艺术学校星海舞蹈艺术学校星海舞蹈艺术学校星海舞蹈艺术学校星海舞蹈艺术学校星海舞蹈艺术学校星海舞蹈艺术学校</text>
+  </view>
+</view>
+</view>

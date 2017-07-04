@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mall/mall",
+    "pages/mine/mine",
+    "pages/school/school",
+    "pages/login/login",
+    "pages/cityselector/cityselector",
+    "pages/allschools/allschools",
+    "pages/cat-schools/cat-schools",
+    "pages/course/course",
+    "pages/audition/audition",
+    "pages/collection/collection",
+    "pages/complain/complain",
+    "pages/order/order",
+    "pages/allClassify/allClassify",
+    "pages/mall/home/home",
+    "pages/mall/goodsClass/goodsClass",
+    "pages/search/search",
+    "pages/result/result",
+    "pages/mall/goodsDetails/goodsDetails",
+    "pages/mall/shop/shop"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ff8a00",
+    "navigationBarTitleText": "共享教育",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ff8a00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "乐学",
+        "iconPath": "images/ic_home.png",
+        "selectedIconPath": "images/ic_home_select.png"
+      },
+      {
+        "pagePath": "pages/mall/home/home",
+        "text": "乐购",
+        "iconPath": "images/ic_shopping.png",
+        "selectedIconPath": "images/ic_shopping_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/ic_person.png",
+        "selectedIconPath": "images/ic_person_select.png"
+      }
+    ]
+  }
+}

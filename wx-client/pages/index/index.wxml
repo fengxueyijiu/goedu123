@@ -1,0 +1,113 @@
+<view>
+  <view class="header">
+    <view class="header-inner">
+      <view class="map" >
+        <image class="icon" src="../../images/sign.svg" />
+        <navigator url="../cityselector/cityselector" hover-class="navigator-hover" class="navigator">{{location}}{{county}}</navigator>
+        <text> > </text>
+      </view>
+      <input type="text" bindfocus="searchIConShow" bindblur="searchIConShow" />
+      <image src="../../images/search.svg" class="search {{searchIConShow?'searchIConShow':''}}" />
+    </view>
+  </view>
+  <swiper indicator-dots="{{true}}"
+  autoplay="{{true}}" interval="5000" duration="1000" style="height: 422rpx">
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/redux-tower.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/gulp-flex-res.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/gitbeijing.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://o86bpj665.bkt.clouddn.com/posters/gitbeijing.png" mode="widthFix" style="width: 750rpx"/>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="cats">
+  <view class="cat" style="width: 300rpx;border-right:1px solid #f1f1f1">
+    <text style="padding:16px 0;border-bottom:1px solid #f1f1f1;">艺术</text>
+    <view class="block">
+      <navigator url="../cat-schools/cat-schools">
+       <image src="../../images/008-piano.svg"  />
+        <text>钢琴</text>
+      </navigator>
+      <navigator url="../cat-schools/cat-schools">
+        <image src="../../images/007-paint-palette.svg"  />
+        <text>绘画</text>
+      </navigator>
+      <navigator url="../cat-schools/cat-schools">
+       <image src="../../images/006-sports.svg"  />
+        <text>舞蹈</text>
+      </navigator>
+      <navigator url="../allClassify/allClassify">
+       <image src="../../images/005-more.svg"  />
+        <text>更多</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cat" style="width: 300rpx;border-right:1px solid #f1f1f1">
+    <text style="padding:16px 0;border-bottom:1px solid #f1f1f1;">文化</text>
+    <view class="block">
+      <navigator url="../cat-schools/cat-schools">
+       <image src="../../images/004-library.svg"  />
+        <text>语文</text>
+      </navigator>
+      <navigator url="../cat-schools/cat-schools">
+       <image src="../../images/009-calculator.svg"  />
+        <text>数学</text>
+      </navigator>
+      <navigator url="../cat-schools/cat-schools">
+       <image src="../../images/002-alphabet.svg"  />
+        <text>英语</text>
+      </navigator>
+      <navigator url="../allClassify/allClassify">
+       <image src="../../images/005-more.svg"  />
+        <text>更多</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cat" style="width: 150rpx;">
+    <text style="padding:16px 0;border-bottom:1px solid #f1f1f1;">幼教</text>
+    <view class="block">
+      <navigator url="../cat-schools/cat-schools">
+       <image src="../../images/001-school.svg"  />
+        <text>幼儿园</text>
+      </navigator>
+      <navigator url="../cat-schools/cat-schools">
+       <image src="../../images/003-elegant.svg"  />
+        <text>小饭桌</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view style="border-bottom:2rpx solid #f1f1f1">
+  <view class="label">
+    <text>热门学校</text>
+    <navigator url="../allschools/allschools">更多 ></navigator>
+  </view>
+  <view class="courses">
+    <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+      <navigator url="../school/school?link={{item.title}}" class="course">
+      <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+      <text class="title">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view>
+  <view class="label">
+    <text>热门课程</text>
+    <navigator url="../allschools/allschools">更多 ></navigator>
+  </view>
+  <view class="courses">
+    <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+      <navigator url="../course/course?link={{item.title}}" class="course">
+      <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+      <text class="title">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

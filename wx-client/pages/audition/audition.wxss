@@ -1,0 +1,45 @@
+/* pages/audition/audition.wxss */
+
+page {
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+.container {
+  padding: 32rpx;
+}
+
+form {
+  display: block;
+}
+
+.label {
+  display: flex;
+  background-color: #fff;
+  padding: 16rpx;
+  align-items: center;
+  font-size: 32rpx;
+  margin-bottom: 32rpx;
+  border-radius: 6px;
+}
+
+.label text {
+  display: block;
+  flex-shrink: 0;
+}
+
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  /*border:1px solid rgba(0, 0, 0, 0.2);*/
+  font-size: 28rpx;
+  padding: 16rpx;
+}
+
+button {
+  margin-top: 64rpx;
+  background-color: #ff8a00;
+  color: #fff;
+}

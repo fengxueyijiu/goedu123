@@ -1,0 +1,11 @@
+<!--pages/schools/schools.wxml-->
+<view>
+  <view class="courses">
+    <view wx:for="{{courses}}" wx:key="id" style="width: 50%; padding: 0 8rpx;">
+      <navigator url="../school/school" class="course">
+      <image src="{{item.cover}}" mode="widthFix" style="width: 100%"/>
+      <text class="title">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+@import '~antd/dist/antd.css';
+
+*{
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: STXihei, 华文细黑, sans-serif;
+  background-color: #f2f2f2;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.page .page-inner {
+  padding-left: 32px;
+  padding-right: 16px;
+  width: 100%;
+  max-width: 932px;
+  margin: 30px auto;
+}
+
+a {
+  color: #108ee9;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+a:hover {
+  color: #49a9ee;
+}
+a:active, a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+.white-block {
+  background-color: #fff;
+  padding: 50px;
+}

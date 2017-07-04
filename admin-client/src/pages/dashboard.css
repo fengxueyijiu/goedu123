@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+.dashboard .main {
+  flex-grow: 1;
+  margin-left: 200px;
+}
+.dashboard .main .top-header {
+  height: 64px;
+  background-color: #404040;
+  color: #fff;
+  width: 100%;
+  padding-left: 72px;
+  line-height: 64px;
+  position: fixed;
+  z-index: 999;
+}
+.dashboard .main .content {
+  margin: 88px 24px 24px;
+}

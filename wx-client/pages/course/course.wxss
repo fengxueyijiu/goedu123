@@ -1,0 +1,61 @@
+/* pages/course/course.wxss */
+
+.course {
+  padding: 0 32rpx;
+  border-top: 16rpx solid #f1f1f1;
+}
+.course text {
+  display: block;
+}
+
+.course .title {
+  padding: 32rpx 0;
+  font-size: 32rpx;
+}
+
+.course view {
+  display: flex;
+  padding: 32rpx 0;
+}
+.course view text {
+  font-size: 24rpx;
+  color: #888888;
+  margin-right: 56rpx;
+}
+
+.school {
+  position: relative;
+  padding: 0 32rpx ;
+  border-top: 16rpx solid #f1f1f1;
+}
+.school text {
+  display: block;
+  padding: 32rpx 0;
+}
+.school .phone {
+  position: absolute;
+  width: 48rpx;
+  height: 48rpx;
+  top: 93rpx;
+  right: 64rpx;
+}
+.school .icon {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  bottom: 28rpx;
+  left: 24rpx
+}
+.introduce {
+  border-top: 16rpx solid #f1f1f1;
+}
+.introduce  text{
+  display: block;
+}
+
+.btn{
+  display: flex;
+  padding: 16rpx 0;
+  border-top: 16rpx solid #f1f1f1;
+  justify-content: space-around;
+}

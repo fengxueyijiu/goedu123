@@ -1,0 +1,29 @@
+/* pages/complain/complain.wxss */
+page {
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+.container {
+  padding: 32rpx;
+}
+
+form {
+  display: block;
+}
+
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  /*border:1px solid rgba(0, 0, 0, 0.2);*/
+  font-size: 28rpx;
+  padding: 16rpx;
+}
+
+button {
+  margin-top: 64rpx;
+  background-color: #ff8a00;
+  color: #fff;
+}
